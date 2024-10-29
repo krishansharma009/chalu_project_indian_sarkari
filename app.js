@@ -63,6 +63,11 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+
+app.get("/gul",async(req,res)=>{
+  res.status(200).send("hello gulgul menas gulli bhai");
+});
+
 // Error handling middleware (Combined)
 app.use((err, req, res, next) => {
   logger.error(err.stack);
